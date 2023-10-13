@@ -1,71 +1,191 @@
 fileFormatVersion: 2
 guid: 806867019f52c42618d1ce3e53556c32
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Armature.001
-    100002: BanderaBone.001
-    100004: //RootNode
-    100006: Bone
-    100008: Bone.001
-    100010: Bone.002
-    100012: Bone.003
-    100014: Bone.004
-    100016: Bone.005
-    100018: Bone.006
-    100020: Bone.007
-    100022: Bone.008
-    100024: Bone.009
-    100026: Bone.009_end
-    100028: Bone.010
-    100030: Bone.011
-    100032: Bone.012
-    100034: Bone.013
-    100036: Bone.014
-    100038: Bone.014_end
-    100040: Bone.015
-    100042: Bone.016
-    100044: Bone.017
-    100046: Bone.018
-    100048: Bone.019
-    100050: Bone.020
-    100052: Bone.020_end
-    400000: Armature.001
-    400002: BanderaBone.001
-    400004: //RootNode
-    400006: Bone
-    400008: Bone.001
-    400010: Bone.002
-    400012: Bone.003
-    400014: Bone.004
-    400016: Bone.005
-    400018: Bone.006
-    400020: Bone.007
-    400022: Bone.008
-    400024: Bone.009
-    400026: Bone.009_end
-    400028: Bone.010
-    400030: Bone.011
-    400032: Bone.012
-    400034: Bone.013
-    400036: Bone.014
-    400038: Bone.014_end
-    400040: Bone.015
-    400042: Bone.016
-    400044: Bone.017
-    400046: Bone.018
-    400048: Bone.019
-    400050: Bone.020
-    400052: Bone.020_end
-    2100000: BanderaA.001
-    4300000: BanderaBone.001
-    7400000: Flag Animation
-    7400002: Flag Animation - no loop
-    9500000: //RootNode
-    13700000: BanderaBone.001
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Armature.001
+  - first:
+      1: 100002
+    second: BanderaBone.001
+  - first:
+      1: 100004
+    second: //RootNode
+  - first:
+      1: 100006
+    second: Bone
+  - first:
+      1: 100008
+    second: Bone.001
+  - first:
+      1: 100010
+    second: Bone.002
+  - first:
+      1: 100012
+    second: Bone.003
+  - first:
+      1: 100014
+    second: Bone.004
+  - first:
+      1: 100016
+    second: Bone.005
+  - first:
+      1: 100018
+    second: Bone.006
+  - first:
+      1: 100020
+    second: Bone.007
+  - first:
+      1: 100022
+    second: Bone.008
+  - first:
+      1: 100024
+    second: Bone.009
+  - first:
+      1: 100026
+    second: Bone.009_end
+  - first:
+      1: 100028
+    second: Bone.010
+  - first:
+      1: 100030
+    second: Bone.011
+  - first:
+      1: 100032
+    second: Bone.012
+  - first:
+      1: 100034
+    second: Bone.013
+  - first:
+      1: 100036
+    second: Bone.014
+  - first:
+      1: 100038
+    second: Bone.014_end
+  - first:
+      1: 100040
+    second: Bone.015
+  - first:
+      1: 100042
+    second: Bone.016
+  - first:
+      1: 100044
+    second: Bone.017
+  - first:
+      1: 100046
+    second: Bone.018
+  - first:
+      1: 100048
+    second: Bone.019
+  - first:
+      1: 100050
+    second: Bone.020
+  - first:
+      1: 100052
+    second: Bone.020_end
+  - first:
+      4: 400000
+    second: Armature.001
+  - first:
+      4: 400002
+    second: BanderaBone.001
+  - first:
+      4: 400004
+    second: //RootNode
+  - first:
+      4: 400006
+    second: Bone
+  - first:
+      4: 400008
+    second: Bone.001
+  - first:
+      4: 400010
+    second: Bone.002
+  - first:
+      4: 400012
+    second: Bone.003
+  - first:
+      4: 400014
+    second: Bone.004
+  - first:
+      4: 400016
+    second: Bone.005
+  - first:
+      4: 400018
+    second: Bone.006
+  - first:
+      4: 400020
+    second: Bone.007
+  - first:
+      4: 400022
+    second: Bone.008
+  - first:
+      4: 400024
+    second: Bone.009
+  - first:
+      4: 400026
+    second: Bone.009_end
+  - first:
+      4: 400028
+    second: Bone.010
+  - first:
+      4: 400030
+    second: Bone.011
+  - first:
+      4: 400032
+    second: Bone.012
+  - first:
+      4: 400034
+    second: Bone.013
+  - first:
+      4: 400036
+    second: Bone.014
+  - first:
+      4: 400038
+    second: Bone.014_end
+  - first:
+      4: 400040
+    second: Bone.015
+  - first:
+      4: 400042
+    second: Bone.016
+  - first:
+      4: 400044
+    second: Bone.017
+  - first:
+      4: 400046
+    second: Bone.018
+  - first:
+      4: 400048
+    second: Bone.019
+  - first:
+      4: 400050
+    second: Bone.020
+  - first:
+      4: 400052
+    second: Bone.020_end
+  - first:
+      21: 2100000
+    second: BanderaA.001
+  - first:
+      43: 4300000
+    second: BanderaBone.001
+  - first:
+      74: 7400000
+    second: Flag Animation
+  - first:
+      74: 7400002
+    second: Flag Animation - no loop
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: BanderaBone.001
   externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -74,6 +194,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -94,6 +215,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Flag Animation
       takeName: Armature.001|Flag
+      internalID: 0
       firstFrame: 0
       lastFrame: 270
       wrapMode: 0
@@ -122,6 +244,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Flag Animation - no loop
       takeName: Armature.001|Flag.001
+      internalID: 0
       firstFrame: 0
       lastFrame: 270
       wrapMode: 0
@@ -154,25 +277,36 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -181,10 +315,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -194,13 +328,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 100
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
