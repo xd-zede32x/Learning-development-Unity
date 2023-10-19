@@ -150,3 +150,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeedPlayer: 7
   _rotateSpeedPlayer: 75
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  _distanceToGround: 0.1
+  _velosityJump: 1
+  _bullet: {fileID: 506706812859705379, guid: 0274222fa8d3e6a4bbd045f8b259c74a, type: 3}
+  _bulletSpeed: 50

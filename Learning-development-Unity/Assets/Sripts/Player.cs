@@ -3,36 +3,38 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float _moveSpeedPlayer = 7;
     [SerializeField] private float _rotateSpeedPlayer = 75;
-    [SerializeField] LayerMask _groundLayer;
     [SerializeField] private float _distanceToGround = 0.1f;
+    [SerializeField] LayerMask _groundLayer;
 
     [Range(0, 3)]
-    [SerializeField] private float _velosityJump = 1.2f;
-    [SerializeField] private GameObject _bullet;
+    [SerializeField] private float _velocityJump = 1.2f;
     [SerializeField] private float _bulletSpeed = 100f;
+    [SerializeField] private GameObject _bullet;
 
-    private Rigidbody _rigidbody;
     private float _verticalInput;
+    private Rigidbody _rigidbody;
     private float _horizontalInput;
+    private GameManager _gameManager;
     private CapsuleCollider _capsuleCollider;
 
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
         _capsuleCollider = GetComponent<CapsuleCollider>();
+        _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     private void Update()
     {
         PressingKeys();
-        Shot(); 
+        Shot();
     }
 
     private void FixedUpdate()
     {
         PlayerMovement();
         Jump();
-    }
+    }   
 
     private void PlayerMovement()
     {
@@ -42,12 +44,12 @@ public class Player : MonoBehaviour
         _rigidbody.MovePosition(this.transform.position + this.transform.forward * _verticalInput * Time.fixedDeltaTime);
         _rigidbody.MoveRotation(_rigidbody.rotation * angleRotate);
     }
-        
+
     private void Jump()
     {
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
-            _rigidbody.AddForce(Vector3.up * _velosityJump, ForceMode.Impulse);
+            _rigidbody.AddForce(Vector3.up * _velocityJump, ForceMode.Impulse);
         }
     }
 
@@ -79,4 +81,12 @@ public class Player : MonoBehaviour
         _verticalInput = Input.GetAxis("Vertical") * _moveSpeedPlayer;
         _horizontalInput = Input.GetAxis("Horizontal") * _rotateSpeedPlayer;
     }
-}
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            _gameManager.HealthPlayer -= 2;
+        }
+    }
+}   
