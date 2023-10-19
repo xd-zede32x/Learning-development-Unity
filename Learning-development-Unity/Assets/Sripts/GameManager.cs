@@ -1,12 +1,18 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+    
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private string _labelText = "Собери все 4 предмета и завоюй свою свободу!";
     [SerializeField] private int _maxItems = 4;
     [SerializeField] private bool _showWinScreen = false;
     [SerializeField] private bool _showLoseScreen = false;
+
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
     private int _itemsCollected = 0;
     public int Items
@@ -19,7 +25,7 @@ public class GameManager : MonoBehaviour
             UpdateGamesHealth();
         }
     }
-
+    
     public int _playerHealth = 10;
     public int HealthPlayer
     {
@@ -31,6 +37,7 @@ public class GameManager : MonoBehaviour
             UpdateGamesHealth();
         }
     }
+
 
     private void OnGUI()
     {
@@ -48,7 +55,7 @@ public class GameManager : MonoBehaviour
             if (GUI.Button(new Rect(Screen.width / 2 - 100,
                 Screen.height / 2 - 50, 200, 100), "Вы выиграли"))
             {
-                RestartLevel();
+                Utilities.RestartLevel();
             }
         }
 
@@ -57,15 +64,9 @@ public class GameManager : MonoBehaviour
             if (GUI.Button(new Rect(Screen.width / 2 - 100,
                 Screen.height / 2 - 50, 200, 100), "Вы проиграли"))
             {
-                RestartLevel();
+                Utilities.RestartLevel();
             }
         }
-    }
-
-    private void RestartLevel()
-    {
-        SceneManager.LoadScene(0);
-        Time.timeScale = 1.0f;
     }
 
     private void UpdateGamesHealth()
@@ -74,18 +75,16 @@ public class GameManager : MonoBehaviour
         {
             _labelText = "Вы нашли все нужные предметы!";
             _showWinScreen = true;
+            Utilities.Cursors();
             Time.timeScale = 0f;
-        }
 
-        else
-        {
-            _labelText = "Найдено только " + (_maxItems - _itemsCollected) + " предметов";
-        }
+        }   
 
         if(_playerHealth <= 0)
         {
-            _labelText = "Ты начать с новой жизни?";
+            _labelText = "Начать с новой жизни?";
             _showLoseScreen = true;
+            Utilities.Cursors();
             Time.timeScale = 0f;
         }
     }

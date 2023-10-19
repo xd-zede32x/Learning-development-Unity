@@ -89,4 +89,4 @@ public class Player : MonoBehaviour
             _gameManager.HealthPlayer -= 2;
         }
     }
-}   
+}
